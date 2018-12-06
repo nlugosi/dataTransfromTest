@@ -1,0 +1,23 @@
+Single language taxonomy to Multi language taxonomy
+
+
+Whenever you find <skos:altLabel xml:lang="en-US"> or <skos:prefLabel xml:lang="en-US"> create 4 elements under
+them with different attribute values.
+The attribute values should be: "de-DE" / "es-ES" / "ja-JP" / "pt-PT".
+
+example:
+<rdf:Description rdf:about="urn:afs:skos:concept:000d70f5-b905-4a36-8a50-3a52adb2af9b">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:altLabel xml:lang="en-US">censored</skos:altLabel>
+	<skos:altLabel xml:lang="de-DE">censored</skos:altLabel>
+	<skos:altLabel xml:lang="es-ES">censored</skos:altLabel>
+	<skos:altLabel xml:lang="ja-JP">censored</skos:altLabel>
+	<skos:altLabel xml:lang="pt-PT">censored</skos:altLabel>
+	<skos:broader rdf:resource="urn:afs:skos:concept:f4dfc37d-ee85-47f0-bbdf-b0d16e879f5c"/>
+	<skos:inScheme rdf:resource="urn:afs:skos:conceptScheme:ea2998cb-5b36-49ea-8891-725bd622751b"/>
+	<skos:prefLabel xml:lang="en-US">censored</skos:prefLabel>
+	<skos:prefLabel xml:lang="de-DE">censored</skos:prefLabel>
+	<skos:prefLabel xml:lang="es-ES">censored</skos:prefLabel>
+	<skos:prefLabel xml:lang="ja-JP">censored</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt-PT">censored</skos:prefLabel>
+</rdf:Description>
