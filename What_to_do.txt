@@ -1,6 +1,9 @@
 Single language taxonomy to Multi language taxonomy
 
+1,
+Create a branch with your name.
 
+2,
 Whenever you find <skos:altLabel xml:lang="en-US"> or <skos:prefLabel xml:lang="en-US"> create 4 elements under
 them with different attribute values.
 The attribute values should be: "de-DE" / "es-ES" / "ja-JP" / "pt-PT".
@@ -21,3 +24,6 @@ example:
 	<skos:prefLabel xml:lang="ja-JP">censored</skos:prefLabel>
 	<skos:prefLabel xml:lang="pt-PT">censored</skos:prefLabel>
 </rdf:Description>
+
+3,
+Push your solution to your own branch.
